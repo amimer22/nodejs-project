@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LOGIN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <nav class="navbar navbar-expand-sm bg-light">
+     <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="/">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/login">login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">register</a>
+      </li>
+    </ul>
+  </nav>
+  <br>
+  <h2>LOGIN </h2>
+  <form action="" method="POST">
+      <br>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        <br>
+        <input type="password" class="form-control" placeholder="Enter password" name="password">
+        <br>
+        <input type="submit" class="btn btn-primary" value="LOG IN">
+  </form>
+  <br>
+  <% if (typeof errorMessage !== "undefined") { %>
+    <p>Form could not be submitted due to the following error:</p>
+    <p><%= errorMessage %></p>
+  <% } %>
+</div>
+
+</body>
+</html>
